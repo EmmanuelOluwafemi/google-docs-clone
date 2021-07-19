@@ -9,7 +9,7 @@ function Header () {
 
     return (
         <div
-            className="sticky top-0 z-50 flex items-center px-4 py-2 shadow-md bg-white"
+            className="sticky top-0 z-50 flex justify-between md:justify-start items-center px-4 py-2 shadow-md bg-white"
         >
             <Button
                 color="gray"
@@ -28,12 +28,12 @@ function Header () {
             />
 
             <h1
-                className="hidden md:inline-block ml-2 text-gray-700 text-2xl"
+                className=" ml-2 text-gray-700 text-2xl"
             >
                 Docs
             </h1>
 
-            <div className="mx-5 md:mx-20 flex flex-grow items-center px-5 py-2 bg-gray-50 text-gray-600 rounded-lg focus-within:text-gray-600 focus-within:shadow-md">
+            <div className="hidden md:flex mx-5 md:mx-20 flex-grow items-center px-5 py-2 bg-gray-50 text-gray-600 rounded-lg focus-within:text-gray-600 focus-within:shadow-md">
                 <Icon name="search" size="3xl" color="gray" />
                 <input type="text" placeholder="Search" className="flex-grow px-5 text-base bg-transparent outline-none" />
             </div>
