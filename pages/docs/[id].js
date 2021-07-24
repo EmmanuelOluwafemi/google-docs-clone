@@ -57,7 +57,7 @@ const Doc = () => {
                 >
                     <Icon name="people" size="md" /> Share
                 </Button>
-                <img className="rounded-full cursor-pointer h-10 w-10 ml-2" src={session.user.image} alt="" />
+                <img onClick={signOut} className="rounded-full cursor-pointer h-10 w-10 ml-2" src={session.user.image} alt="" />
             </header>
 
             <TextEditor id={id} />
